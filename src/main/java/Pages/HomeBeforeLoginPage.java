@@ -19,8 +19,6 @@ public class HomeBeforeLoginPage extends PageBase {
     @FindBy (css = "input[value='Log In']")
     WebElement loginBtn;
 
-    @FindBy (css = ".smallText")
-    public WebElement welcomeMessage;
 
     public void userLogin(String username, String password) {
         setTextElement(usernameBox,username);
@@ -55,6 +53,14 @@ public class HomeBeforeLoginPage extends PageBase {
         clickBtn(customerCare);
     }
 
+
+    // Register
+
+    @FindBy (linkText = "Register")
+    WebElement registerBtn;
+    public void openRegisterPage () {
+        clickBtn(registerBtn);
+    }
 
 
 
