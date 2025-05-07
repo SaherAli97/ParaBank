@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="RegisterAndLogin" parallel="false">
+<suite name="RegisterAndLogin" parallel="none">
 
     <test name="RegisterAndLogin">
         <classes>
-            <class name="Tests.RegistrationTest"/>
             <class name="Tests.LoginTest"/>
+            <class name="Tests.OpenNewAccTest"/>
         </classes>
     </test>
 

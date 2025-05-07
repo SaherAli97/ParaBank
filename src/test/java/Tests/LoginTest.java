@@ -17,7 +17,7 @@ public class LoginTest extends TestBase{
         homeObject = new HomeBeforeLoginPage(driver);
         registerObject = new RegistrationPage(driver);
         homeAfterObject = new HomeAfterLoginPage(driver);
-        homeObject.userLogin("test13","123123");
+        homeObject.userLogin("john","demo");
 
         try {
             Assert.assertTrue(homeAfterObject.welcomeMessage.isDisplayed());
