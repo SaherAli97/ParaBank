@@ -10,7 +10,8 @@ A test automation framework built with **Selenium**, **Java**, and **TestNG** fo
 - Selenium WebDriver  
 - TestNG  
 - Maven  
-- Page Object Model (POM) Design Pattern  
+- Page Object Model (POM) Design Pattern
+- Cucumber   
   
 
 ---
