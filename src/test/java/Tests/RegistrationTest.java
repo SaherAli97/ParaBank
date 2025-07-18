@@ -21,8 +21,6 @@ public class RegistrationTest extends TestBase {
         registerObject.newRegister("TestFName","TestLName","address","city","state",
                 "123123","0112211221","1212","Test13","123123");
 
-        //Assert.assertTrue(registerObject.registrationAssert.isDisplayed());
-        //System.out.println("Assertion Passed: User Registered Successfully .");
 
         homeAfterObject.logout();
 

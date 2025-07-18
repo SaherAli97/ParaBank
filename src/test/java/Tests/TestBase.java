@@ -1,5 +1,6 @@
 package Tests;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,13 +13,13 @@ import java.util.logging.Level;
 
 import static java.lang.System.getProperty;
 
-public class TestBase {
+public class TestBase extends AbstractTestNGCucumberTests {
     public static WebDriver driver;
 
 
     @BeforeSuite
     public void startDriver () throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/Drivers/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
